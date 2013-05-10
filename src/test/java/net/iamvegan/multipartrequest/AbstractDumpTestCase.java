@@ -29,9 +29,9 @@ import net.iamvegan.multipartrequest.util.DumpFile;
 
 import org.apache.commons.fileupload.MockHttpServletRequest;
 
-import junit.framework.TestCase;
+import org.junit.Assert;
 
-public class AbstractDumpTestCase extends TestCase {
+public abstract class AbstractDumpTestCase extends Assert {
     protected HttpServletRequest request;
     protected HttpServletMultipartRequest multiRequest;
 

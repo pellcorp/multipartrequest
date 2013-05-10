@@ -21,11 +21,16 @@
  */
 package net.iamvegan.multipartrequest;
 
+import org.junit.Before;
+import org.junit.Test;
+
 public class NoMultipartNormalParametersTest extends AbstractDumpTestCase {
+    @Before
     public void setUp() throws Exception {
         setUp("NoMultipart_NormalParameters_Firefox-2.0.0.3.dump");
     }
-
+    
+    @Test
     public void testIsMultipart() throws Exception {
         assertFalse("Request is not multipart.", multiRequest.isMultipartRequest());
     }

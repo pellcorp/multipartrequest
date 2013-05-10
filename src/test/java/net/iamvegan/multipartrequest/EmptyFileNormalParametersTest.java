@@ -23,17 +23,23 @@ package net.iamvegan.multipartrequest;
 
 import java.io.IOException;
 
+import org.junit.Before;
+import org.junit.Test;
+
 /**
  */
 public class EmptyFileNormalParametersTest extends AbstractDumpTestCase {
+    @Before
     public void setUp() throws IOException {
         setUp("Multipart_EmptyFileUpload_NormalParameters_Firefox-2.0.0.3.dump");
     }
 
+    @Test
     public void testIsMultipart() throws Exception {
         assertTrue("Request is multipart.", multiRequest.isMultipartRequest());
     }
 
+    @Test
     public void testNormalParameters() {
         assertEquals("", "Jason", request.getParameter("name"));
 
@@ -54,6 +60,7 @@ public class EmptyFileNormalParametersTest extends AbstractDumpTestCase {
         assertEquals("", "Are you going to upload a file.\r\n", request.getParameter("stuff"));
     }
 
+    @Test
     public void testFileParameters() {
         MultipartFile file = multiRequest.getFileParameter("file1");
         assertNull("file1 MultipartFile should not exist!, where file object is empty", file);

@@ -21,12 +21,16 @@
  */
 package net.iamvegan.multipartrequest;
 
-public class MultiPartMultifileUploadNormalParametersTest extends AbstractDumpTestCase {
+import org.junit.Before;
+import org.junit.Test;
 
-    protected void setUp() throws Exception {
+public class MultiPartMultifileUploadNormalParametersTest extends AbstractDumpTestCase {
+    @Before
+    public void setUp() throws Exception {
         setUp("MultiPart_MultifileUpload_NormalParameters_Firefox-2.0.0.4.dump");
     }
 
+    @Test
     public void testIsMultipart() throws Exception {
         assertTrue("Request is multipart.", multiRequest.isMultipartRequest());
     }
