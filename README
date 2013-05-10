@@ -20,7 +20,7 @@ dependency to the file upload lib, the required code has been copied.  The follo
 classes have been copied from Apache File Uploads library and in some cases modified
 slightly.
 
-src/main/java/net/iamvegan/multipartrequest/ProgressListener.java
+src/main/java/com/pellcorp/multipartrequest/ProgressListener.java
 src/main/java/org/apache/commons/fileupload/ParameterParser.java
 src/main/java/org/apache/commons/fileupload/util/Streams.java
 src/main/test/org/apache/commons/fileupload/MockHttpServletRequest.java
