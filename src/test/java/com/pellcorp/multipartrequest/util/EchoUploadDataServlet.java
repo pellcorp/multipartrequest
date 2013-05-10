@@ -1,5 +1,3 @@
-package net.iamvegan.multipartrequest;
-
 /*
  MultipartRequest servlet library
  Copyright (C) 2001-2013 by Jason Pell
@@ -21,30 +19,37 @@ package net.iamvegan.multipartrequest;
  A copy of the Lesser General Public License (lesser.txt) is included in 
  this archive or goto the GNU website http://www.gnu.org/copyleft/lesser.html.
  */
+package com.pellcorp.multipartrequest.util;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpServlet;
+
+import org.apache.commons.fileupload.util.Streams;
+
 import java.io.IOException;
+import java.io.OutputStream;
+import java.io.InputStream;
 
 /**
  * @author Jason Pell
- * @version 2.00b11
  */
-public class MaxContentLengthException extends IOException {
-    private static final long serialVersionUID = 6953805748306660762L;
+public class EchoUploadDataServlet extends HttpServlet {
+    private static final long serialVersionUID = -6744686032206324942L;
 
-    private long maxContentLength;
-    private long contentLength;
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
+        IOException {
+        InputStream in = request.getInputStream();
+        OutputStream out = response.getOutputStream();
 
-    public MaxContentLengthException(long contentLength, long maxContentLength) {
-        super("Content length exceeded (" + contentLength + " > " + maxContentLength + ")");
+        String strUserAgent = request.getHeader("user-agent");
 
-        this.maxContentLength = maxContentLength;
-        this.contentLength = contentLength;
-    }
+        String fileName = strUserAgent + ".dump";
 
-    public long getContentLength() {
-        return this.contentLength;
-    }
+        response.addHeader("Content-disposition", "attachment; filename=\"" + fileName + "\"");
+        response.setContentType("application/octet-stream");
 
-    public long getMaxContentLength() {
-        return this.maxContentLength;
+        Streams.copy(in, out, true);
     }
 }

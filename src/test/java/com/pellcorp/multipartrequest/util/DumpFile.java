@@ -19,14 +19,15 @@
  A copy of the Lesser General Public License (lesser.txt) is included in 
  this archive or goto the GNU website http://www.gnu.org/copyleft/lesser.html.
  */
-package net.iamvegan.multipartrequest.util;
+package com.pellcorp.multipartrequest.util;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.StringReader;
 
-import net.iamvegan.multipartrequest.HttpServletMultipartRequest;
+import com.pellcorp.multipartrequest.HttpServletMultipartRequest;
+
 
 import org.apache.commons.fileupload.util.Streams;
 

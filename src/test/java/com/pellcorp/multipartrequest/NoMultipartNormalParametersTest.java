@@ -19,19 +19,19 @@
  A copy of the Lesser General Public License (lesser.txt) is included in 
  this archive or goto the GNU website http://www.gnu.org/copyleft/lesser.html.
  */
-package net.iamvegan.multipartrequest;
+package com.pellcorp.multipartrequest;
 
 import org.junit.Before;
 import org.junit.Test;
 
-public class MultiPartMultifileUploadNormalParametersTest extends AbstractDumpTestCase {
+public class NoMultipartNormalParametersTest extends AbstractDumpTestCase {
     @Before
     public void setUp() throws Exception {
-        setUp("MultiPart_MultifileUpload_NormalParameters_Firefox-2.0.0.4.dump");
+        setUp("NoMultipart_NormalParameters_Firefox-2.0.0.3.dump");
     }
-
+    
     @Test
     public void testIsMultipart() throws Exception {
-        assertTrue("Request is multipart.", multiRequest.isMultipartRequest());
+        assertFalse("Request is not multipart.", multiRequest.isMultipartRequest());
     }
 }

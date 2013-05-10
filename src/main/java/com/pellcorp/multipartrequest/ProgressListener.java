@@ -1,4 +1,4 @@
-package net.iamvegan.multipartrequest;
+package com.pellcorp.multipartrequest;
 
 /*
  MultipartRequest servlet library

@@ -1,4 +1,4 @@
-package net.iamvegan.multipartrequest.util;
+package com.pellcorp.multipartrequest.util;
 
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.webapp.WebAppContext;

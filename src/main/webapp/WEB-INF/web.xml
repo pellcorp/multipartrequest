@@ -4,21 +4,21 @@
 	
 	<servlet>
 		<description>Test Upload Servlet</description>
-		<display-name>testupload</display-name>
-		<servlet-name>testupload</servlet-name>
-		<servlet-class>net.iamvegan.multipartrequest.util.TestUpload</servlet-class>
+		<display-name>TestUpload</display-name>
+		<servlet-name>TestUpload</servlet-name>
+		<servlet-class>com.pellcorp.multipartrequest.util.TestUpload</servlet-class>
 	</servlet>
 	
 	<servlet>
 		<description>Echo Upload Servlet</description>
 		<display-name>EchoUploadDataServlet</display-name>
 		<servlet-name>EchoUploadDataServlet</servlet-name>
-		<servlet-class>net.iamvegan.multipartrequest.util.EchoUploadDataServlet</servlet-class>
+		<servlet-class>com.pellcorp.multipartrequest.util.EchoUploadDataServlet</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
-		<servlet-name>testupload</servlet-name>
-		<url-pattern>/testupload</url-pattern>
+		<servlet-name>TestUpload</servlet-name>
+		<url-pattern>/TestUpload</url-pattern>
 	</servlet-mapping>
 	
 	<servlet-mapping>
