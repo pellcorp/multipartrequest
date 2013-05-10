@@ -1,13 +1,15 @@
 Servlet MultipartRequest 2.0 README
 -----------------------------------
 
-Servlet 2.3+ File Upload Support
+Pell Multipart Java Servlet 2.3 File Upload Support
 
 
 Maven Releases
 --------------
 
 http://pellcorp.github.com/maven2/releases
+
+Latest version is 2.0.2
 
 
 Contributions
