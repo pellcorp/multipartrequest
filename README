@@ -1,6 +1,18 @@
 Servlet MultipartRequest 2.0 README
 -----------------------------------
 
+Servlet 2.3+ File Upload Support
+
+
+Maven Releases
+--------------
+
+http://pellcorp.github.com/maven2/releases
+
+
+Contributions
+-------------
+
 This library uses some code from Apache Commons file upload.  Instead of creating a 
 dependency to the file upload lib, the required code has been copied.  The following 
 classes have been copied from Apache File Uploads library and in some cases modified
