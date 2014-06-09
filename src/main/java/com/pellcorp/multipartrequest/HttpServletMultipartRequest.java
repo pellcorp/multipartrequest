@@ -41,7 +41,7 @@ import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
 
-import org.apache.commons.fileupload.ParameterParser;
+import com.pellcorp.multipartrequest.commons.fileupload.ParameterParser;
 
 /**
  * A MultipartRequest HttpServletRequest wrapper. This class extends the HttpServletRequestWrapper class and

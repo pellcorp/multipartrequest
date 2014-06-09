@@ -27,9 +27,7 @@ import java.io.InputStream;
 import java.io.StringReader;
 
 import com.pellcorp.multipartrequest.HttpServletMultipartRequest;
-
-
-import org.apache.commons.fileupload.util.Streams;
+import com.pellcorp.multipartrequest.commons.fileupload.util.Streams;
 
 public class DumpFile {
     private byte[] contents;

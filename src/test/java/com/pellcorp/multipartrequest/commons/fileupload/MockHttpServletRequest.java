@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.commons.fileupload;
+package com.pellcorp.multipartrequest.commons.fileupload;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;

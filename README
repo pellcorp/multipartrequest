@@ -21,7 +21,6 @@ classes have been copied from Apache File Uploads library and in some cases modi
 slightly.
 
 src/main/java/com/pellcorp/multipartrequest/ProgressListener.java
-src/main/java/org/apache/commons/fileupload/ParameterParser.java
-src/main/java/org/apache/commons/fileupload/util/Streams.java
-src/main/test/org/apache/commons/fileupload/MockHttpServletRequest.java
-
+src/main/java/com/pellcorp/multipartrequest/commons/fileupload/ParameterParser.java
+src/main/java/com/pellcorp/multipartrequest/commons/fileupload/util/Streams.java
+src/main/test/com/pellcorp/multipartrequest/commons/fileupload/MockHttpServletRequest.java

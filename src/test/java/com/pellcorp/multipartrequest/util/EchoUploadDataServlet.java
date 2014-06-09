@@ -26,7 +26,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpServlet;
 
-import org.apache.commons.fileupload.util.Streams;
+import com.pellcorp.multipartrequest.commons.fileupload.util.Streams;
 
 import java.io.IOException;
 import java.io.OutputStream;

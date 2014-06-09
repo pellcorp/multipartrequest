@@ -26,10 +26,8 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 
 import com.pellcorp.multipartrequest.HttpServletMultipartRequest;
+import com.pellcorp.multipartrequest.commons.fileupload.MockHttpServletRequest;
 import com.pellcorp.multipartrequest.util.DumpFile;
-
-
-import org.apache.commons.fileupload.MockHttpServletRequest;
 
 import org.junit.Assert;
 
