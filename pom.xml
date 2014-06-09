@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.pellcorp</groupId>
 	<artifactId>multipartrequest</artifactId>
-	<version>2.0.3</version>
+	<version>2.0.4-SNAPSHOT</version>
 	<description>Pell Multipart Java Servlet 2.3 File Upload Support</description>
 
 	<properties>
